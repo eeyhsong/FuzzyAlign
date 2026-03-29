@@ -1,12 +1,10 @@
 # FuzzyAlign
 
-FuzzyAlign is a set of scripts for EEG-to-image alignment and reconstruction on TVSD-like data.
-
-This release removes machine-specific absolute paths and supports configurable paths through CLI arguments.
+Fuzzy Alignment Resolves Visual Representations from 1,024-Channel Brain Recordings
 
 ## What Is Included
 
-- EEG-image alignment training: `fuzzyalign.py`
+- Brain-image alignment training: `fuzzyalign.py`
 - TVSD preprocessing: `TVSD/preprocessing/`
 - DNN feature extraction: `TVSD/dnn_feature_extraction/`
 - Reconstruction pipeline: `reconstruction/`
@@ -183,9 +181,3 @@ python FuzzyAlign/metrics/recon_metrics_high.py \
   --generated_root ./generated_imgs_high_level \
   --results_root ./results
 ```
-
-## Notes
-
-- `reconstruction/model.py` is expected by reconstruction scripts and is included in this folder.
-- GPU IDs are still hardcoded in some scripts (`cuda:0`, `cuda:1`, etc.). Adjust these if needed.
-- For reproducibility, set seeds and pin dependency versions in your environment.
