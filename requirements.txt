@@ -1,0 +1,29 @@
+# Core scientific stack
+numpy
+pandas
+scipy
+matplotlib
+pillow
+tqdm
+scikit-image
+h5py
+einops
+torchsummary
+
+# PyTorch
+torch
+torchvision
+torchaudio
+
+# Diffusion and vision-language models
+transformers
+diffusers
+accelerate
+open-clip-torch
+
+# Project-specific model components
+torch-geometric
+dalle2-pytorch
+
+# OpenAI CLIP package used by scripts importing `clip`
+git+https://github.com/openai/CLIP.git
